@@ -1,0 +1,29 @@
+POST http://localhost:3001/product
+Content-Type: application/json
+
+{
+    "name":"Skin Care",
+    "quantity":2,
+    "price":500,
+    "image":"https://images.pexels.com/photos/4046316/pexels-photo-4046316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+}
+
+###
+
+GET http://localhost:3001/products
+###
+
+GET http://localhost:3001/products/64a3034990bee448e7212ab8
+
+###
+
+PUT http://localhost:3001/products/64a3034990bee448e7212ab8
+Content-Type: application/json
+
+{
+    "name":"Baby Shampoo"
+}
+
+###
+
+DELETE http://localhost:3001/products/64a3034990bee448e7212ab8
